@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<title>Liste</title>
+	</head>
+	<body>
+		<div class="fluid-container">
+			<div class="row entete">
+				<div class="col-6">
+					<h1 id="titre">Ma Liste</h1>
+				</div>
+				<div class="col-4">
+					<form id="recherche">
+						<input type="text" id="input-recherche" name="q"></input>
+						<button id="btn-recherche" type="submit">valider</button>
+					</form>
+				</div>
+			</div>
+			<div class="row ardoise">
+				<div class="bodure-coter col-1"></div>
+				<div class="col-7">
+					<ul id="liste">
+						<li class="vue">
+							<form>
+								<div class="d-inline-block col-xs-12">
+									<input type="text" class="champ-text"> x<span class="nombre"></span>
+								</div>
+								<div class="d-inline-block col-xs-12 ">
+								<button class="super-bouton btn-modif" type="submit"> modifier </button>
+								<button class="super-bouton btn-modif-plus" type="submit"> + </button>
+								<button class="super-bouton btn-modif-moins" type="submit" > - </button>
+								<button class="super-bouton btn-delete"> supprime </button>
+								</div>
+							</form>
+						</li>
+					</ul>
+					<div id="groupe-ajout">
+						<p>Ajouter a la liste</p>
+						<input type="text" id="ajout" name="ajout"></input>
+						<button id="btn-ajout">valider</button>
+					</div>
+				</div>
+
+				<div class="col-3 card axel">
+					<h5>Connexion</h5>
+					<div class="card-body" style="display: none;">
+
+							<h6>Identifiant</h6>
+							<input type="text" name="identifiant" placeholder="identifiant"> <br>
+							<br>
+							<h6>Mot De Passe</h6>
+							<input type="password" name="mdp" placeholder="Mot De Passe"><br>
+							<br id="1">
+
+							<button class="btn">Connexion</button>
+							<button class="btn" id="btn-inscription">inscription</button>
+
+					</div>
+				</div>
+				<div class="bodure-coter col-1"></div>
+			</div>
+			<div class="pied-de-page"></div>
+		</div>
+
+
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>

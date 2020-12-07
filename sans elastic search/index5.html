@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>hello</title>
+		<style>
+			#femme{
+				color: rgb(226, 43, 202);
+			}
+			#homme{
+				color: cornflowerblue;
+			}
+			#indefini{
+				color: darkgreen;
+			}
+			#suppr{
+				color:red;
+			}
+			.gras {
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>bienvenue chez moi <strong id="{{sexe}}">{{name}}</strong></h1>
+		<p id="text" class="{{class}}">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium vel laboriosam unde, delectus ipsa, veritatis modi nisi expedita facere architecto rem. Fugit debitis vitae perferendis voluptatibus quis. Ratione, rerum quam!</p>
+
+
+
+		<form action="/" method="get">
+			<ul>{{liste}}</ul>
+			<div>
+			<p>sexe</p>
+			<div>
+
+				<input type="radio" id="f" name="sexe" value="f">femme</input>
+			</div>
+			<div><input type="radio" id="h" name="sexe"value="h">homme</input></div>
+
+			</div>
+			<p>nom</p>
+			<input type="text" id="name" name="name"></input>
+			<p>a ajouter a la liste</p>
+			<input type="text" id="ajout" name="ajout"></input>
+			<button>valider</button>
+		</form>
+
+	</body>
+</html>

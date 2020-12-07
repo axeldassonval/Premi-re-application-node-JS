@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>hello</title>
+		<style>
+			#femme{
+				color: rgb(226, 43, 202);
+			}
+			#homme{
+				color: cornflowerblue;
+			}
+			#indefini{
+				color: darkgreen;
+			}
+			#suppr{
+				color:red;
+			}
+			.gras {
+				font-weight: bold;
+			}
+			.super-bouton {
+				display: inline-block;
+				border: 1px solid #999;
+				color: #999;
+				text-decoration: none;
+				text-align: center;
+				width: 50px;
+			}
+			.super-bouton:hover {
+				border: 1px solid #36f;
+				color: #36f;
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="/" method="get">
+			<ul>{{liste}}</ul>
+
+			<p>a ajouter a la liste</p>
+			<input type="text" id="ajout" name="ajout"></input>
+			<input type="hidden" id="supermethod" name="supermethod" value="POST"></input>
+			<button>valider</button>
+		</form>
+		<form>
+			<p>recherche</p>
+			<input type="text" id="recherche" name="q"></input>
+			<!--<input type="hidden" id="supermethod" name="supermethod" value="GET"></input>-->
+			<button>valider</button>
+		</form>
+	</body>
+</html>
